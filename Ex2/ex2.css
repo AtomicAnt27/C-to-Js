@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    box-shadow: rgba(22, 18, 18, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    z-index: 999;
+    background: rgb(216, 12, 131);
+    background: linear-gradient(90deg, rgb(226, 7, 135) 0%, rgba(238, 50, 148, 1) 51%, rgb(241, 69, 158) 100%);
+}
