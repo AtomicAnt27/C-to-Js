@@ -3,19 +3,109 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+    width: 100vw;
+    background-color: azure;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     width: 100vw;
+    height: 4rem;
+    background-color: white;
     position: fixed;
-    box-shadow: rgba(22, 18, 18, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     z-index: 999;
-    background: rgb(216, 12, 131);
-    background: linear-gradient(90deg, rgb(226, 7, 135) 0%, rgba(238, 50, 148, 1) 51%, rgb(241, 69, 158) 100%);
+}
+
+header>ul {
+    padding: 1rem;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    z-index: -111;
+}
+
+a {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 100ms linear;
+}
+
+a:hover {
+    color: black;
+    cursor: pointer;
+    border-bottom: 3px solid;
+    transition: none 0ms ease;
+    padding: 2px 0 10px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.wrap-everything {
+    background-color: cadetblue;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 4rem;
+}
+
+.wrapCalc {
+    background-color: azure;
+    padding: 25px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapCalc>input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    text-indent: 5px;
+}
+
+.wrapCalc>button {
+    color: azure;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background-color: cadetblue;
+    border: none;
+}
+
+.resultado {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.ex-img {
+    border-radius: 10px;
 }

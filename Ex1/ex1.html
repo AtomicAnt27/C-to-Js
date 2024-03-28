@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,15 @@
 
     <link rel="stylesheet" href="./ex1.css">
     <script src="./ex1.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header" style="display: none;">
-        <img class="logo_img logo_wrap" src="" alt="logo">
+    <header class="header">
         <ul>
             <li><a href="../Ex1/ex1.html">Ex 1</a></li>
             <li><a href="../Ex2/ex2.html">Ex 2</a></li>
@@ -21,69 +26,22 @@
         </ul>
     </header>
 
-    <div class="wrapCalc">
-        <h1>Exercício 01</h1>
-        <p>Digite o primeiro número:</p>
-        <input id="firstNumber" type="text">
-        <p>Digite o segundo número:</p>
-        <input id="secondNumber" type="text">
-        <button onclick="Calcular()">Calcular</button>
-        <p><span id="resultPlus"></span></p>
-        <p><span id="resultMultiplie"></span></p>
-    </div>
 
-    <!-- #include<stdio.h>
-        #include<stdlib.h>
-        #include<locale.h>
-        
-        char calcula(int n1, int n2, int *p_soma, int *p_multi);
-        
-        
-        int main(){
-            setlocale(LC_ALL,"Portuguese");
-            
-            int n1 = 0, n2 = 0, soma = 0, multi = 0, resp = 0;
-        
-            
-            printf("DIGITE O PRIMEIRO NÚMERO:");
-            fflush(stdin);
-            scanf("%d",&n1);
-                
-            printf("DIGITE O SEGUNDO NÚMERO:");
-            fflush(stdin);
-            scanf("%d",&n2);
-            
-            resp = calcula(n1,n2, &soma, &multi);
-            
-        
-            
-            printf("\nA soma dos 2 números informados é = %d.\n", soma);
-            printf("A multipicação dos 2 números informados é = %d.\n", multi);
-            printf("%c.\n\n\n",resp);
-            
-            system("pause");
-        }
-        char calcula(int n1, int n2, int *p_soma, int *p_multi){
-            
-            *p_soma = n1 + n2;
-            
-            
-            *p_multi = n1 * n2;
-            
-            
-            char pi;
-            
-            if(*p_soma % 2 == 0){
-                pi = 'P';
-                return(pi);
-            }
-            else{
-                pi = 'I';
-                return(pi);
-            }
-            
-            
-        } -->
+    <div class="wrap-everything">
+        <div class="wrapCalc">
+            <h2>Calculadora em JavaScript</h2>
+            <label for="numero1">Digite o primeiro número:</label>
+            <input type="number" id="numero1">
+            <br>
+            <label for="numero2">Digite o segundo número:</label>
+            <input type="number" id="numero2">
+            <br>
+            <button onclick="calcular()">Calcular</button>
+            <br>
+            <p id="resultado" class="resultado"></p>
+        </div>
+        <img src="ex1.png" alt="" class="ex-img" width="500px">
+    </div>
 </body>
 
 </html>

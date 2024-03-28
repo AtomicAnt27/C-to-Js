@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,9 @@
     <link rel="stylesheet" href="./ex3.css">
     <script src="./ex3.js"></script>
 </head>
+
 <body>
     <header class="header">
-        <img class="logo_img logo_wrap" src="" alt="logo">
         <ul>
             <li><a href="../Ex1/ex1.html">Ex 1</a></li>
             <li><a href="../Ex2/ex2.html">Ex 2</a></li>
@@ -20,43 +21,15 @@
         </ul>
     </header>
 
-    <div>
-        <h1></h1>
-        <p>Informe um número:</p>
-        <input type="text">
-        <button onclick="Calcular()"></button>
-        <p>O quadrado desse número é: <span></span></p>
+    <div class="wrap-everything">
+        <div class="wrapCalc">
+            <input id="num" type="number" placeholder="Informe um número">
+            <button id="calc" onclick="exec()">Calcular quadrado</button>
+            <h3>Quadrado do número</h3>
+            <span id="quad"></span>
+        </div>
+        <img src="ex3.png" alt="" class="ex-img" width="500px">
     </div>
-
-    <!-- #include<stdio.h>
-        #include<stdlib.h>
-        #include<locale.h>
-        
-        int quad (int x);
-        
-        int main(){
-            setlocale(LC_ALL,"Portuguese");
-            
-            int num, res;
-            
-            
-                printf("Informe um numero: ");
-                scanf("%d", &num);
-            
-                res = quad(num);
-            
-                printf("O quadrado de %d é: %d \n",num,res);
-            
-            
-            system("pause");
-            return 0;
-        }
-        
-        int quad (int x){
-            int quadrado;
-            
-            quadrado = x*x;
-            return quadrado;
-        } -->
 </body>
+
 </html>
